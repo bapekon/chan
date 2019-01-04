@@ -1,116 +1,672 @@
 body {
     margin: 0;
     padding: 0;
-
-    font-family: "Pt Sans Narrow", Arial, sans-serif;
-    font-size: 14;
-    font-weight: 700;
-    color: #ffffff;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16;
+    font-weight: 400;
+    color: #000000;
     line-height: 24px;
-    text-transform: uppercase;
-
-    background-color: blue;
-    background-image: url("img/background: .jpg;");
+    background-color: white;
     background-position: top center;
     background-repeat: no-repeat;
 }
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 .main-navigation {
-    background-color: #000000;
-    font-size: 16px;
-    line-height: 20px;
+    background: rgba(93, 50, 20, 0.7);
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
     color: #ffffff;
-    background-color: #000000;
-}
-
-.site-navigation,
-.user-navigation {
-    list-style: none;
-}\
-
-.site-navigation a,
-.user-navigation a; {
-    color: #ffffff;
-}
-
-.site-navigation a:hover;
-.site-navigation a:focus;
-.user-navigation a: hover;
-.user-navigation a:focus; {
-    background-color: #242424;
-}
-
-.feuchers-list {
-    list-style: none;
-    display: flex;
-}
-
-.feuchers-item {
     text-align: center;
 }
 
-.feuchers-item h3 {
+/* Менюс при помощи флексов */
+.site-navigation {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.site-navigation li {
+    min-width: 150px;
+}
+
+.main-screen {
+    background-image: url(D:\Обучение\Верстка\Projects in progress\Chan-chugunniy\img\4966b.jpeg);
+    background-color: rgba(93, 50, 20, 0.7);
+    height: 700px;
+    margin-top: -50px;
+}
+
+.h1-color {
+    color: #edcc13;
+}
+
+.clock-time {
+    /* position: absolute;
+    right: 110px;
+    top: 5px; */
+    text-align: center;
+    /* какая разница рилэйтив или маржин это? */
+    margin-left: auto;
+    margin-right: 110px;
+    padding-top: 15px;
+    padding-left: 70%;
+}
+
+.clock-time p {
+    font-size: 12px;
+    color: #ffffff;
+}
+
+p.main-phone {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: -15px;
+    letter-spacing: 2px;
+}
+
+p.main-messengers {
+    font-size: 16px;
+    letter-spacing: 2px;
+}
+
+p.work-time {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-top: -10px;
+}
+
+.main-text {
+    text-align: center;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 64px;
+    margin-top: 20px;
+}
+
+.main-text p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.triggers {
+    font-size: 18px;
+    list-style: none;
+    position: relative;
+    left: 175px;
+    text-align: left;
+    margin-top: 85px;
+}
+
+.main-feuchers {
+    list-style: none;
+    margin: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.main-feuters-item {
+    min-height: 220px;
+    width: 940px;
+    margin: auto;
+}
+
+.main-feuchers-item-bg {
+    background-color: #f5f1f0;
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.main-feuters-item-2 {
+    background-color: #f5f1f0;
+    margin: auto;
+    /* padding-top: 20px;
+    padding-bottom: 20px; */
+    min-height: 220px;
+    width: 940px;
+}
+
+   .main-feuters-item img {
+    width: 340px;
+    float: left;
+    padding-right: 50px;
+}
+
+.main-feuters-item-2 img {
+    width: 340px;
+    float: right;
+    padding-left: 50px;
+}
+
+h2 {
+    font-size: 34px;
+    color: #5d3202;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.main-feuchers-h3 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.product-for-house {
+    background-color: #f5f1f0;
+    padding-top: 30px;
+    margin: auto;
+}
+
+.subtitle {
+    font-size: 22px;
+    text-align: center;
+    /* max-width: 550px; */
+    margin: auto;
+    margin-bottom: 35px;
+    line-height: 35px;
+}
+
+.product-for-house-feuchers {
+    display: flex;
+    padding-top: 60px;
+    justify-content: center;
+}
+
+.product-for-house-feuchers-list {
+    list-style: none;
+    margin-top: -20px;
+}
+
+.product-for-house-feuchers-list p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-left: 80px;
+}
+
+.product-for-house-feuchers-list img {
+    weight: 40px;
+    height: 40px;
+    float: left;
+    margin-right: 30px;
+}
+
+.product-for-house-feuchers-list li {
+    padding-bottom: 20px;
+    max-width: 470px;
+}
+
+.product-for-house-photo {
+    width: 550px;
+    height: 370px;
+    margin-right: 20px;
+}
+
+.product-for-house-text {
+    width: 750px;
+    text-align: center;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 90px;
+}
+
+h2.form-h2 {
     font-size: 30px;
-    line-height: 42px;
+    line-height: 36px;
+    text-align: center;
+    color: black;
+    font-weight: 500;
 }
 
-.news-gallery {
-    background-color: #f7f4f1;
-    background-image: url("D:/Сайты/Project_Barbershop/img/bg-forbloks.jpg");
-    background-repeat: repeat;
-    background-position: 0 0;
+p.privacy-policy {
+    font-size: 14px;
+    text-align: center;
+    padding-bottom: 60px;
 }
 
-.news,
-.gallery {
-    color: #000000;
+.forbissness {
+    padding-top: 35px;
 }
-.news h2,
-.gallery h2,
-.contact h2,
-.appointment h2 {
+
+.forbissness-items {
+    list-style: none;
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    justify-content: space-around;
+    width: 1280px;
+}
+
+.forbissness-items li {
+    width: 180px;
+    text-align: center;
+}
+
+.forbissness-img {
+    border-radius: 50%;
+    width: 150px;
+}
+
+.forbissness-items h3 {
+    margin-bottom: 3px;
+    font-weight: 500;
+}
+
+p.forbissness-i {
+    font-size: 22px;
+    line-height: 50px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.forbissness-info {
+    background-color: #f5f1f0;
+    padding: 60px 240px;
+    min-height: 400px;
+}
+
+.forbissness-info img {
+    float: right;
+    width: 550px;
+    margin-left: 50px;
+}
+
+.forbissness-feuters {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin: auto;
+}
+
+.forbissness-feuters li {
+    flex-basis: 550px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+}
+
+.forbissness-feuters h3 {
+    font-size: 24px;
+    color: black;
+    font-weight: 400;
+    line-height: 35px;
+    max-width: 550px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.forbissness-feuters ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.forbissness-feuters h4 {
+    font-size: 16px;
+    margin-top: -5px;
+}
+
+img.forbissness-icon {
+    height: 45px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 150px;
+}
+
+.forbissness-with-chan {
+    font-size: 12px;
+}
+
+.additional-service-icon {
+    height: 45px;
+    float: left;
+    margin-right: 30px;
+    /* margin-bottom: 0px; */
+}
+
+h2.form2-h2 {
     font-size: 30px;
-    line-height: 42px
-
+    line-height: 36px;
+    text-align: center;
+    color: black;
+    font-weight: 500;
 }
-.news-list {
+
+.bissness-consulting {
+    background-color: #f5f1f0;
+    padding-top: 30px;
+}
+
+.catalog-options {
+    list-style: none;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.additional-service h3 {
+    font-size: 22px;
+    font-weight: 400;
+    text-align: center;
+    max-width: 570px;
+    margin: auto;
+    margin-bottom: 60px;
+    line-height: 35px;
+}
+
+.additional-service-list {
     list-style: none;
 }
 
-.gallery-content {
-    /* background-color: #cccccc; */
-    border: 7px solid #ffffff;
-}
-.contact-appointment {
-    background-color: #f7f4f1;
-    background-color: #f7f4f1;
-    background-image: url("D:/Сайты/Project_Barbershop/img/bg-forbloks.jpg");
-    background-repeat: repeat;
-    background-position: 0 0;
-    color: #000000;
+.additional-service-list h4 {
+    font-size: 18px;
 }
 
-.appointment-item input {
-    background-color: transparent;
-    border: 2px solid #000000;
+.additional-service-list li {
+    margin-bottom: 50px;
 }
 
-.appointment-item input:focus {
-    border-color: #5d4b39;
+.additional-service-list p {
+    margin-left: 80px
 }
 
-.main-foooter {
-    background-color: #232323
-    background-image: url("D:/Сайты/Project_Barbershop/img/bg-footer.jpg");
-    background-repeat: repeat;
-    background-position: 0 0;
-}
-
-.container {
+.catalog-flex {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+    padding: 0;
     width: 940px;
-    margin: 0 auto;
+}
+
+.catalog-icon {
+    width: 250px;
+}
+
+.catalog-text {
+    font-size: 14px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.catalog-product {
+    margin: 0px 20px;
+}
+
+.catalog-product p {
+    font-size: 14px;
+}
+}
+
+.catalog-options {
+    text-align: left;
+}
+
+.catalog-options li {
+    margin-left: -40px;
+}
+
+.How-to-buy {
+    background-color: #f5f1f0;
+    padding: 50px 200px;
+}
+
+.How-to-buy h2 {
+    padding-bottom: 40px;
+}
+
+.How-to-buy-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 60px;
+    padding: 0;
+    /* width: 940px; */
+}
+
+.How-to-buy-list li {
+    text-align: center;
+}
+
+.How-to-buy-list p {
+    font-size: 18px;
+}
+
+.How-to-buy-arrow {
+    width: 40px;
+    padding-top: 20px;
+}
+
+.How-to-buy-icon {
+    width: 60px;
+}
+
+.additional-service {
+    width: 800px;
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.about-product {
+    display: flex;
+    background-color: #f5f1f0;
+}
+
+.about-product img {
+    width: 50%;
+    /* height: 600px; */
+    margin-right: 80px;
+}
+
+.about-text {
+    /* float: right; */
+    margin-bottom: 30px;
+}
+
+.about-text h2 {
+    text-align: left;
+    padding-top: 60px;
+}
+
+.about-text p {
+    margin-right: 80px;
+}
+
+
+
+.completed-gallery {
+    padding: 0px 20px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+
+.completed-gallery img {
+    width: 320px;
+    height: 200px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.completed-gallery :nth-child(4) {
+    margin-right: 0px;
+}
+.completed-gallery :nth-child(8) {
+    margin-right: 0px;
+}
+
+.gallery-flex {
+    margin: 0px 0px;
+    padding: 0 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    /* border: 1px solid black; */
+}
+
+.completed-gallery .clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Формы и кнопки */
+
+.main-form {
+    position: absolute;
+    right: 200px;
+    width: 300px;
+    margin-right: 200px;
+    margin-left: auto;
+    margin-top: -90px;
+}
+
+.main-form-field {
+    height: 30px;
+    width: 300px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.button {
+    width: 200px;
+    height: 55px;
+    border: 0px;
+    background-color: #edcc13;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.catalog-button {
+    /* width: 200px; */
+    /* height: 55px; */
+    /* font-size: 10px; */
+    padding: 15px 25px;
+    border: 0px;
+    background-color: #edcc13;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.consult-form {
+    text-align: center;
+}
+
+.consult-form-field {
+    height: 50px;
+    width: 220px;
+    margin-bottom: 20px;
+    /* margin-left: 20px; */
+    margin-right: 20px;
+    border: 0;
+    padding-left: 20px;
+}
+
+.another-questions {
+    background-color: #f5f1f0;
+    text-align: center;
+    padding-top: 45px;
+}
+
+.form-another-questions {
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+}
+
+.another-questions h3 {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    margin-bottom: 70px;
+    margin-top: -20px;
+}
+
+.form-another-field {
+    height: 55px;
+    width: 700px;
+    margin: auto;
+    /* margin-bottom: 20px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+}
+
+.form-another-field-2 {
+    height: 100px;
+    width: 700px;
+    margin: auto;
+    /* margin-bottom: 20px; */
+    /* margin-left: 20px; */
+    /* margin-right: 20px; */
+    border: 1px solid black;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    padding-top: 20px;
+}
+
+.form-another-questions button {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+/*footer*/
+
+.main-footer {
+    background-image: url (D:/Обучение/Верстка/Projects in progress/Chan-chugunniy/img/Исходник_набор_трав.jpg);
+    margin: 60px auto;
+    text-align: center;
+}
+
+.footer-contacts {
+    list-style: none;
+    padding: 0;
+    /* border: 1px solid black; */
+    /* color: white; */
+}
+
+.social-flex {
+    display: flex;
+    width: 120px;
+    margin: 30px auto;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+}
+.vk-social-footer {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 50px;
+}
+
+.youtube-social-footer {
+    /* float: left;? */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 45%;
+    width: 50px;
 }
