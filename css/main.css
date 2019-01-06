@@ -447,6 +447,9 @@ h2.form2-h2 {
     text-align: center;
 }
 
+.How-to-buy-list li:nth-child(odd) {
+    width: 250px;
+}
 .How-to-buy-list p {
     font-size: 18px;
 }
@@ -500,17 +503,18 @@ h2.form2-h2 {
 }
 
 
-.completed-gallery img {
+.gallery-flex img {
     width: 320px;
     height: 200px;
     margin-bottom: 20px;
     margin-right: 20px;
+    align-content: space-around;
 }
 
-.completed-gallery :nth-child(4) {
+.gallery-flex :nth-child(4) {
     margin-right: 0px;
 }
-.completed-gallery :nth-child(8) {
+.gallery-flex :nth-child(8) {
     margin-right: 0px;
 }
 
@@ -530,6 +534,29 @@ h2.form2-h2 {
   display: table;
   clear: both;
 }
+
+.product-map {
+    padding: 45px;
+}
+.map {
+    text-align: center;
+}
+
+iframe:first-child {
+    margin-right: 30px;
+}
+
+.product-video {
+    margin-bottom: 45px;
+}
+
+.video-content {
+    width: 1000px;;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 
 /* Формы и кнопки */
 
